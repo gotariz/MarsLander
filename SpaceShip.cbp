@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MarsLander" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/MarsLander" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/Program Files (x86)/CodeBlocks/MinGW/bin" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/MarsLander" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/Program Files (x86)/CodeBlocks/MinGW/bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add directory="src" />
+			<Add directory="freeglut/include" />
+		</Compiler>
+		<Linker>
+			<Add library="freeglut" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="winmm" />
+			<Add library="gdi32" />
+			<Add directory="freeglut/lib" />
+		</Linker>
+		<Unit filename="src/Globals.cpp" />
+		<Unit filename="src/Globals.h" />
+		<Unit filename="src/SOIL.h" />
+		<Unit filename="src/consts.h" />
+		<Unit filename="src/general.h" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/scene/Mesh.cpp" />
+		<Unit filename="src/scene/Mesh.h" />
+		<Unit filename="src/scene/OrbitRing.cpp" />
+		<Unit filename="src/scene/OrbitRing.h" />
+		<Unit filename="src/scene/QuadSphere.cpp" />
+		<Unit filename="src/scene/QuadSphere.h" />
+		<Unit filename="src/scene/SceneObject.cpp" />
+		<Unit filename="src/scene/SceneObject.h" />
+		<Unit filename="src/scene/SkyBox.cpp" />
+		<Unit filename="src/scene/SkyBox.h" />
+		<Unit filename="src/scene/SpaceShip.cpp" />
+		<Unit filename="src/scene/SpaceShip.h" />
+		<Unit filename="src/soil/SOIL.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/soil/SOIL.h" />
+		<Unit filename="src/soil/image_DXT.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/soil/image_DXT.h" />
+		<Unit filename="src/soil/image_helper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/soil/image_helper.h" />
+		<Unit filename="src/soil/stb_image_aug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/soil/stb_image_aug.h" />
+		<Unit filename="src/soil/stbi_DDS_aug.h" />
+		<Unit filename="src/soil/stbi_DDS_aug_c.h" />
+		<Unit filename="src/system/OpenGLApp.cpp" />
+		<Unit filename="src/system/OpenGLApp.h" />
+		<Unit filename="src/system/OpenGLCallbacks.h" />
+		<Unit filename="src/system/glCamera.cpp" />
+		<Unit filename="src/system/glCamera.h" />
+		<Unit filename="src/utils/structs.h" />
+		<Unit filename="src/utils/utils.cpp" />
+		<Unit filename="src/utils/utils.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
